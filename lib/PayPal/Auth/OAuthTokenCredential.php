@@ -141,7 +141,7 @@ class OAuthTokenCredential extends PayPalResourceModel
 
             // Case where we have an old unencrypted cache file
             if (!array_key_exists('accessTokenEncrypted', $token)) {
-                AuthorizationCache::push($config, $this->clientId, $this->encrypt($this->accessToken), $this->tokenCreateTime, $this->tokenExpiresIn);
+                AuthorizationCache::push($this->clientId, $this->encrypt($this->accessToken), $this->tokenCreateTime, $this->tokenExpiresIn, $config);
             } else {
                 $this->accessToken = $this->decrypt($token['accessTokenEncrypted']);
             }
