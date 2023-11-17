@@ -1,5 +1,5 @@
 {
-    "name": "br-paypaldev/rest-api-sdk-php",
+    "name": "vnicchio/rest-api-sdk-php",
     "description": "PayPal's PHP SDK for REST APIs",
     "keywords": ["paypal", "payments", "rest", "sdk"],
     "type": "library",
